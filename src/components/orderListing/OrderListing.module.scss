@@ -1,0 +1,11 @@
+.DivDataGridOrders {
+  height: 400;
+  width: '60%';
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.DataGridOrders {
+  --DataGrid-containerBackground: #848484 !important
+}
