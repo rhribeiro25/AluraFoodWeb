@@ -5,14 +5,16 @@ import ProductForm from './pages/admistration/products/ProductForm';
 import OrderAdministration from './pages/admistration/orders/OrderAdministration';
 import OrderForm from './pages/admistration/orders/OrderForm';
 import Home from './pages/home';
-import ShowcaseOrders from './pages/showcaseOrders';
+import OrderShowCase from './pages/orderShowCase';
+import OrderDetails from './pages/orderDetails';
 
 function App() {
 
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/orders" element={<ShowcaseOrders />} /> 
+      <Route path="/orders" element={<OrderShowCase />} /> 
+      <Route path="/products/:id" element={<OrderDetails />} /> 
 
       <Route path='/admin' element={<HomePageAdmin />}>
 

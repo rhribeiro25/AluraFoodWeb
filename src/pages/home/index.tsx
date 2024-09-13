@@ -1,5 +1,3 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import Banner from '../../components/banner';
 import NavBar from '../../components/navBar';
 import Rodape from '../../components/footer';
