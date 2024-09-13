@@ -4,9 +4,9 @@ import IOrder from '../../interfaces/IOrder';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';
 import {DateToDateFormated, DateToTimeFormated} from '../../utils/DateUtils';
-import style from './OrderListing.module.scss';
+import style from './OrderDataGrid.module.scss';
 
-export default function OrderListing() {
+export default function OrderDataGrid() {
 
   const columns: GridColDef[] = [
     { field: 'id', headerName: 'ID', width: 115 },
@@ -32,7 +32,6 @@ export default function OrderListing() {
   }
 
   useEffect(() => {
-    // obter orders
     axios.get('http://localhost:8082/orders-ms/orders')
       .then(resposta => {
         setOrders(resposta.data)
