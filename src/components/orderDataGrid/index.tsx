@@ -32,7 +32,6 @@ export default function OrderDataGrid() {
         );
       },
     }
-    
   ];
   const paginationModel = { page: 0, pageSize: 5 };
   const [orders, setOrders] = useState<IOrder[]>([])
